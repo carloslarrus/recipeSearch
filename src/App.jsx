@@ -9,8 +9,9 @@ function App() {
   useEffect(() => {
     fetchData()
   }, [])
-  const AP_id = ''
-  const AP_key = ''
+  const AP_id = 'a217cdb2'
+  const AP_key = '215d4c299ee8df4154906d43508e20b6'
+ 
   const API_url = `https://api.edamam.com/search?q=${input}&app_id=${AP_id}&app_key=${AP_key}`
 
   async function fetchData(){
