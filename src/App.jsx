@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
+import dotenv from 'dotenv'
+dotenv.config()
 
 function App() {
   const[input, setInput] = useState('');
@@ -9,8 +11,8 @@ function App() {
   useEffect(() => {
     fetchData()
   }, [])
-  const AP_id = 'a217cdb2'
-  const AP_key = '215d4c299ee8df4154906d43508e20b6'
+  const AP_id = process.env.AP_id_base
+  const AP_key = process.env.AP_key_base
  
   const API_url = `https://api.edamam.com/search?q=${input}&app_id=${AP_id}&app_key=${AP_key}`
 
