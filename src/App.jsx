@@ -6,7 +6,7 @@ dotenv.config()
 function App() {
   const[input, setInput] = useState('');
   const [data, setData] = useState([]);
-  // const [cuisineType, setCuisineType] =useState()
+  // const [cuisineType, setCuisineType] =useState() //
 
   useEffect(() => {
     fetchData()
